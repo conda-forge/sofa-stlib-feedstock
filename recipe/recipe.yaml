@@ -12,7 +12,7 @@ source:
   sha256: 72271a4d1af70f617db5f89a4b37a8ef3fc5a9f82a15ca7eedc8f547bc3a209b
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -46,7 +46,7 @@ tests:
       run:
         - cmake-package-check
         - ${{ compiler('c') }}
-        - ${{ compiler('cxx') }}            
+        - ${{ compiler('cxx') }}
   - python:
       imports:
         - splib3
